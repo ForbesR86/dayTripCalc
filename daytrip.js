@@ -44,11 +44,6 @@ function getEntertainment(array){
     let myEntertainment = array[randoV]
     return myEntertainment;
 }
-
-function rerollApprover(reroll){
-
-}
-
 //Version 1, 
 // let startVacation = "yes"
 // let startVacationKey = true
@@ -74,8 +69,6 @@ function rerollApprover(reroll){
 //         }    
 //     }    
 // }
-
-
 let satisfiedCustomer = "yes"
 let finalizeVacation = true
 let yay = "yay"
@@ -118,10 +111,9 @@ while (finalizeVacation) { //build the vacation
     }
 finalApproval = prompt('You will be going to ' + myDestinationFinal + '. You will travel by ' + myTravel + '. You will dine at ' + myRestaurant + '. and for your enjoyment, you will experience ' + myEntertainment + '. yay or nay?')
 finalApproval.toLowerCase();
-if(finalApproval == yay){
+    if(finalApproval == yay){
     console.log('You will be going to ' + myDestinationFinal + '. You will travel by ' + myTravel + '. You will dine at ' + myRestaurant + '. and for your enjoyment, you will experience ' + myEntertainment + '!!!!!')
     console.log('Enjoy your vacation!')
     finalizeVacation = false
-}
-
+    }
 }
