@@ -10,8 +10,8 @@
 
 let vacaDestinations = ['Grand Canyon', 'Yosemite', 'Yellowstone', 'New York City', 'San Francisco']
 let vacaRestaurants = ['Cheesecake Factory', 'Five Guys', 'Fuddruckers', 'Subway', 'Applebees']
-let vacaTravelMode = ['Car', 'Plane', 'Bus', 'Uber']
-let vacaEntertainment = ['Ballet', 'Sporting event', 'Festival', 'Family Reunion']
+let vacaTravelMode = ['Car', 'Plane', 'Bus', 'Uber', 'Hitchhiking']
+let vacaEntertainment = ['Ballet', 'Sporting event', 'Festival', 'Family Reunion', ' Hiking', 'Kayaking', 'Waterpark']
 
 //https://www.w3schools.com/jsref/jsref_random.asp
 // Math.floor((Math.random() * 10) + 1);
@@ -116,7 +116,12 @@ while (finalizeVacation) { //build the vacation
         entertainmentApproval = prompt('How does ' + myEntertainment + ' sound? yay or nay?')
         entertainmentApproval.toLowerCase();
     }
-console.log('You will be going to ' + myDestinationFinal + '. You will travel by ' + myTravel + '. You will dine at ' + myRestaurant + '. and for your enjoyment, you will experience ' + myEntertainment + '!!!!!')
-console.log('Enjoy your vacation!')
-finalizeVacation = false
+finalApproval = prompt('You will be going to ' + myDestinationFinal + '. You will travel by ' + myTravel + '. You will dine at ' + myRestaurant + '. and for your enjoyment, you will experience ' + myEntertainment + '. yay or nay?')
+finalApproval.toLowerCase();
+if(finalApproval == yay){
+    console.log('You will be going to ' + myDestinationFinal + '. You will travel by ' + myTravel + '. You will dine at ' + myRestaurant + '. and for your enjoyment, you will experience ' + myEntertainment + '!!!!!')
+    console.log('Enjoy your vacation!')
+    finalizeVacation = false
+}
+
 }
